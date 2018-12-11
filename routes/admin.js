@@ -32,7 +32,7 @@ async function verifyToken(idToken) {
         audience: GOOGLE_CLIENT_ID,
     });
     const payload = ticket.getPayload();
-    if (!authorizedDomains.includes(payload.hd)) {
+    if (payload.email_verified !== true || payload.email !== process.env.ADMIN) {
         throw new Error('Unauthorized');
     }
     return payload;
