@@ -46,6 +46,16 @@ if (rpcNode) {
     steem.api.setOptions({ url: rpcNode });
 }
 
+const addressPrefix = getEnv('ADDRESS_PREFIX');
+if (addressPrefix) {
+    steem.config.set('address_prefix', addressPrefix);
+}
+
+const chainId = getEnv('CHAIN_ID');
+if (chainId) {
+    steem.config.set('chain_id', chainId);
+}
+
 /**
  * Send a SMS.
  * @param to Message recipient, e.g. +1234567890.

@@ -16,6 +16,14 @@ if (window.config.STEEMJS_URL) {
     steem.api.setOptions({ url: window.config.STEEMJS_URL });
 }
 
+if (window.config.ADDRESS_PREFIX) {
+    steem.config.set('address_prefix', window.config.ADDRESS_PREFIX);
+}
+
+if (window.config.CHAIN_ID) {
+    steem.config.set('chain_id', window.config.CHAIN_ID);
+}
+
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(

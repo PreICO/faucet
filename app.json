@@ -60,6 +60,12 @@
     "STEEMJS_URL": {
       "required": true
     },
+    "ADDRESS_PREFIX": {
+      "required": true
+    },
+    "CHAIN_ID": {
+      "required": true
+    },
     "LOG_FORMAT": "short",
     "DEFAULT_REDIRECT_URI": ""
   },
