@@ -74,6 +74,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const hbs = require('hbs');
 
+hbs.registerHelper('googleSiteVerification', () => process.env.GOOGLE_SITE_VERIFICATION)
 hbs.registerHelper('clientConfig', () => clientConfig);
 hbs.registerHelper('baseCss', () => new hbs.SafeString(process.env.NODE_ENV !== 'production' ? '' : '<link rel="stylesheet" href="/css/base.css" type="text/css" media="all"/>'));
 hbs.registerPartials(`${__dirname}/views/partials`);
