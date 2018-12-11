@@ -35,6 +35,10 @@ const condenserSecret = getEnv('CREATE_USER_SECRET');
 const condenserUrl = getEnv('CREATE_USER_URL');
 const conveyorAccount = getEnv('CONVEYOR_USERNAME');
 const conveyorKey = getEnv('CONVEYOR_POSTING_WIF');
+const createAccountDelegation = getEnv('CREATE_ACCOUNT_DELEGATION');
+const createAccountDelegator = getEnv('DELEGATOR_USERNAME');
+const createAccountFee = getEnv('CREATE_ACCOUNT_FEE');
+const createAccountWif = getEnv('DELEGATOR_ACTIVE_WIF');
 const recaptchaSecret = getEnv('RECAPTCHA_SECRET');
 
 const rpcNode = getEnv('STEEMJS_URL');
@@ -158,11 +162,18 @@ async function createAccount(payload) {
     if (DEBUG_MODE) {
         logger.warn({ accountPayload: payload }, 'Creating new account');
     } else {
-        return steem.api.signedCallAsync(
-            `kingdom.create_account`,
-            payload,
-            conveyorAccount,
-            conveyorKey
+        return steem.broadcast.accountCreateWithDelegationAsync(
+            createAccountWif,
+            createAccountFee,
+            createAccountDelegation,
+            createAccountDelegator,
+            payload.username,
+            payload.owner,
+            payload.active,
+            payload.posting,
+            payload.memoKey,
+            payload.metadata,
+            []
         );
     }
 }
