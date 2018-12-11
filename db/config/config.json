@@ -3,21 +3,21 @@
     "use_env_variable": "DATABASE_URL",
     "operatorsAliases": false,
     "dialectOptions": {
-      "ssl": true
+      "ssl": false
     }
   },
   "staging": {
     "use_env_variable": "DATABASE_URL",
     "operatorsAliases": false,
     "dialectOptions": {
-      "ssl": true
+      "ssl": false
     }
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
     "operatorsAliases": false,
     "dialectOptions": {
-      "ssl": true
+      "ssl": false
     }
   }
 }
