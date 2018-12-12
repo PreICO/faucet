@@ -156,16 +156,15 @@ async function verifyCaptcha(recaptcha, ip) {
 
 /**
  * Create new steem account.
- * @param payload Account create with delegation operation.
+ * @param payload Account create operation.
  */
 async function createAccount(payload) {
     if (DEBUG_MODE) {
         logger.warn({ accountPayload: payload }, 'Creating new account');
     } else {
-        return steem.broadcast.accountCreateWithDelegationAsync(
+        return steem.broadcast.accountCreateAsync(
             createAccountWif,
             createAccountFee,
-            createAccountDelegation,
             createAccountDelegator,
             payload.username,
             payload.owner,
