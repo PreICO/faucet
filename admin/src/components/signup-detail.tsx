@@ -143,7 +143,7 @@ function FingerprintTree({ fingerprint }: { fingerprint: Fingerprint }) {
 }
 
 function extractScoresFromGatekeeperData(gatekeeperData: object) {
-  if (gatekeeperData === null) {
+  if (gatekeeperData === undefined || gatekeeperData === null) {
     return {}
   }
 
