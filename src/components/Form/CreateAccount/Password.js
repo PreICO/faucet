@@ -162,7 +162,7 @@ class Password extends Component {
                                             <a
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                href="https://steemit.com/tos.html"
+                                                href="https://earthshare.network/tos.html"
                                             >
                                                 <FormattedMessage id="terms_of_service" />
                                             </a>
@@ -194,7 +194,7 @@ class Password extends Component {
                                             <a
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                href="https://steemit.com/privacy.html"
+                                                href="https://earthshare.network/privacy.html"
                                             >
                                                 <FormattedMessage id="privacy_policy" />
                                             </a>

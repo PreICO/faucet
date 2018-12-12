@@ -110,7 +110,7 @@ const SignupOptions = ({
                     }}
                 >
                     <Button type="primary" ghost htmlType="button">
-                        AnonSteem
+                        AnonEarthshare
                         <Icon type="link" />
                     </Button>
                 </a>
@@ -127,7 +127,7 @@ const SignupOptions = ({
                     }}
                 >
                     <Button type="primary" ghost htmlType="button">
-                        SteemConnect
+                        EarthshareConnect
                         <Icon type="link" />
                     </Button>
                 </a>
@@ -153,7 +153,7 @@ SignupOptions.propTypes = {
 };
 
 SignupOptions.defaultProps = {
-    referrer: 'steemit',
+    referrer: 'earthshare',
 };
 
 export default SignupOptions;

@@ -202,7 +202,7 @@ class Signup extends Component {
                     <div className="Signup__form">
                         <div className="Signup__header">
                             <object
-                                data="img/logo-steem.svg"
+                                data="img/logo-earthshare.svg"
                                 type="image/svg+xml"
                                 id="logo"
                                 aria-label="logo"
@@ -271,9 +271,9 @@ class Signup extends Component {
 
                         {step === 'signupOptions' && (
                             <div>
-                                {referrer === 'steemit' && (
+                                {referrer === 'earthshare' && (
                                     <object
-                                        data="img/steemit-logo.svg"
+                                        data="img/earthshare-logo.svg"
                                         type="image/svg+xml"
                                         id="app-logo"
                                         aria-label="logo"
@@ -291,9 +291,9 @@ class Signup extends Component {
                         )}
                         {step === 'username' && (
                             <div className="form-content">
-                                {referrer === 'steemit' && (
+                                {referrer === 'earthshare' && (
                                     <object
-                                        data="img/steemit-logo.svg"
+                                        data="img/earthshare-logo.svg"
                                         type="image/svg+xml"
                                         id="app-logo"
                                         aria-label="logo"
@@ -303,10 +303,10 @@ class Signup extends Component {
                                     <FormattedMessage id="get_started" />
                                 </h1>
                                 <p>
-                                    {referrer === 'steemit' && (
+                                    {referrer === 'earthshare' && (
                                         <FormattedMessage id="username_know_steemit" />
                                     )}
-                                    {referrer !== 'steemit' && (
+                                    {referrer !== 'earthshare' && (
                                         <FormattedMessage id="username_know" />
                                     )}
                                 </p>

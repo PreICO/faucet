@@ -397,7 +397,7 @@ async function handleRequestSms(req) {
     try {
         await services.sendSMS(
             phoneNumber,
-            `${phoneCode} is your Steem confirmation code`
+            `${phoneCode} is your Earthshare confirmation code`
         );
     } catch (cause) {
         if (cause.code === 21614 || cause.code === 21211) {

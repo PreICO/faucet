@@ -29,11 +29,11 @@ const checkpoints = [
         symbol: CHECKPOINTS.paid_signup_clicked_blocktrades,
     },
     {
-        human: 'Clicked anonsteem',
+        human: 'Clicked anonearthshare',
         symbol: CHECKPOINTS.paid_signup_clicked_anonsteem,
     },
     {
-        human: 'Clicked steemconnect',
+        human: 'Clicked earthshareconnect',
         symbol: CHECKPOINTS.paid_signup_clicked_steemconnect,
     },
     {

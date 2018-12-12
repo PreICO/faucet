@@ -12,7 +12,7 @@
     "country_code_select": "选择地区",
     "edit": "编辑",
     "email": "E-mail",
-    "enjoy_steem": "你可以使用Steem所有功能了",
+    "enjoy_steem": "你可以使用Earthshare所有功能了",
     "enter_confirmation_code": "输入验证码",
     "enter_email": "输入E-mail地址",
     "enter_phone": "输入你的手机号码",
@@ -78,7 +78,7 @@
     "error_validation_account_segment_start": "用户名分段必须以字母开头",
     "finish_text_1":
         "在验证你注册申请之后，我们将进行审核。审核通过后，我们将发邮件通知你完成账号注册。",
-    "finish_text_2": "你将成为Steem社区的早期会员！",
+    "finish_text_2": "你将成为Earthshare社区的早期会员！",
     "generate_new_password": "生成一个新密码",
     "get_started": "开始",
     "go_back": "返回",
@@ -87,7 +87,7 @@
     "password_copied": "密码已复制到粘贴板",
     "phone_number": "手机号码",
     "please_confirm": "请输入验证码来确认。",
-    "redirect_button_text": "前往Steemit",
+    "redirect_button_text": "前往Earthshare",
     "resend": "重新发送",
     "save_password": "保存密码",
     "save_password_text":
@@ -95,16 +95,16 @@
     "send_sms": "我们将给你发送短信验证码.",
     "sign_in": "登录",
     "signup_username_right_text":
-        "一个Steem账号可以让你使用所有基于Steem的应用。",
+        "一个Earthshare账号可以让你使用所有基于Earthshare的应用。",
     "signup_username_right_title": "你只需要一个账号",
     "sms_code": "我们已把验证码发送到 {phoneNumber} {editLink}",
-    "steem_signup": "Steem 注册",
+    "steem_signup": "Earthshare 注册",
     "success_new_code_sent": "新的验证码已被发送",
     "username": "用户名",
     "username_available": "好消息! 用户名 {username} 是可用的.",
-    "username_know": "选择一个用户名. 它是你在所有基于Steem应用的标志。",
+    "username_know": "选择一个用户名. 它是你在所有基于Earthshare应用的标志。",
     "username_know_steemit":
-        "选择一个用户名. 它是你在Steemit和所有基于Steem应用的标志。",
+        "选择一个用户名. 它是你在Earthshare和所有基于Earthshare应用的标志。",
     "username_steemit_login": "已经拥有账号? {link}",
     "welcome": "欢迎"
 }

@@ -128,7 +128,7 @@ async function conveyorCall(method, params) {
         logger.warn({ callParams: params }, 'Conveyor call %s', method);
         switch (method) {
             case 'is_email_registered':
-                return (params.email || params[0]) === 'taken@steemit.com';
+                return (params.email || params[0]) === 'taken@earthshare.network';
             case 'is_phone_registered':
                 return (params.phone || params[0]) === '+12345678900';
             case 'set_user_data':
@@ -165,7 +165,7 @@ async function verifyCaptcha(recaptcha, ip) {
 }
 
 /**
- * Create new steem account.
+ * Create new earthshare account.
  * @param payload Account create operation.
  */
 async function createAccount(payload) {
